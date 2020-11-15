@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Clone del búscador</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- https://google.github.io/material-design-icons/#icon-images-for-the-web -->
+    <!-- Colección de iconos: https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <span id="izda">
+            <a href="#">Sobre Google</a>
+            <a href="#">Tienda</a>
+        </span>
+        <span id="dcha">
+            <a href="#">GMail</a>
+            <a href="#">Imagénes</a>
+            <a href="#"><i class="material-icons">apps</i></a>
+        </span>
+    </nav>
+
+    <div id="contenedor">
+        <div>
+            <img src="img/googlelogo_color_272x92dp.png" alt="google logo">
+        </div>        
+        <div class="centrado">
+            
+            <form action="https://www.google.es/search" style="overflow:visible"  data-submitfalse="q" method="GET" role="search">
+                <div id="barra_busqueda">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Buscar" value="" name="q" id="s">
+                    <i class="material-icons">mic</i>
+                </div>                            
+                <div class="botonera">
+                    <!-- <button type="submit" class="boton" name="btnK">Buscar en Google</button>
+                    <button class="boton" name="btnI">Voy a tener suerte</button> -->
+                    <input class="boton" value="Buscar con Google" aria-label="Buscar con Google" name="btnK" type="submit" data-ved="0ahUKEwjDsfPpj_7sAhWPsBQKHUhrCrQQ4dUDCA0">
+                    
+                    <input class="boton" value="Voy a tener suerte" aria-label="Voy a tener suerte" name="btnI" type="submit" jsaction="sf.lck" data-ved="0ahUKEwjDsfPpj_7sAhWPsBQKHUhrCrQQ19QECA4">
+                </div>                
+            </form>
+            <div id="idiomas">Ofrecido por Google en:  
+                <a href="https://www.google.es/setprefs?sig=0_8Gs9PiILsKDSvDL7Jn4yne7hLII%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj3qMKSyYXtAhWjyYUKHREOBbIQ2ZgBCBE">English</a>
+                <a href="https://www.google.es/setprefs?sig=0_8Gs9PiILsKDSvDL7Jn4yne7hLII%3D&amp;hl=ca&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj3qMKSyYXtAhWjyYUKHREOBbIQ2ZgBCBI">català</a>
+                <a href="https://www.google.es/setprefs?sig=0_8Gs9PiILsKDSvDL7Jn4yne7hLII%3D&amp;hl=gl&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj3qMKSyYXtAhWjyYUKHREOBbIQ2ZgBCBM">galego</a>
+                <a href="https://www.google.es/setprefs?sig=0_8Gs9PiILsKDSvDL7Jn4yne7hLII%3D&amp;hl=eu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj3qMKSyYXtAhWjyYUKHREOBbIQ2ZgBCBQ">euskara</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="pie-superior">
+            <span>España</span>
+        </div>
+        <div class="pie-inferior">
+            <span id="izda">
+                <a href="#">Publicidad</a>
+                <a href="#">Empresa</a>
+                <a href="#">Como funciona la Búsqueda</a>
+            </span>
+            <span id="dcha">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Configuración</a>
+            </span>
+        </div>
+    </footer>
+</body> 
+</html>
